@@ -1,0 +1,1 @@
+//Objects for Items that characters equip
