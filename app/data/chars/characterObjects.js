@@ -21,4 +21,4 @@ rogue.sneakAttack = ()=>{
     }
 }
 
-var healer = new Class("Healer", 0, 2, 2, 10, 10)
+var healer = new Class("Healer", 0, 2, 2, 10, 10);
