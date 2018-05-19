@@ -20,3 +20,12 @@ var helmet = new Armor("Helmet", 1);
 var chestPlate = new Armor("Chest Plate", 2);
 var greaves = new Armor("Greaves", 1);
 var boots = new Armor("Boots", 1);
+var gloves = new Armor("Gloves", 1);
+
+module.exports = {
+    sword: sword,
+    dagger: dagger,
+    staff: staff,
+    wand: wand,
+    shield: shield
+};
