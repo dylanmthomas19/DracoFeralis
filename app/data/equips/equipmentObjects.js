@@ -27,5 +27,10 @@ module.exports = {
     dagger: dagger,
     staff: staff,
     wand: wand,
-    shield: shield
+    shield: shield,
+    helmet: helmet,
+    chestPlate: chestPlate,
+    greaves: greaves,
+    boots: boots,
+    gloves: gloves
 };

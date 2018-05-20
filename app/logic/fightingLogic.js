@@ -1,5 +1,8 @@
 //Handles how characters fight dragons
-
+const dragon = require("../data/chars/dragonObjects")
+const characters = require("../data/chars/characterObjects")
+console.log(characters.fighter.str + characters.fighter.weapon[0].str)
+ 
 // click for each party member action
 
 // dragon hp = dragon hp - attackers str
