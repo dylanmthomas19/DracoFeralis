@@ -24,5 +24,5 @@ module.exports = {
     windDragon: windDragon,
     lightningDragon: lightningDragon,
     bossDragon: bossDragon
-}
+} 
 

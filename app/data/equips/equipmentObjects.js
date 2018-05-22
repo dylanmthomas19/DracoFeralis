@@ -5,7 +5,7 @@ var Weapon = function(type, str, def){
     this.def = def
 };
 
-var sword = new Weapon("Sword", 3, 1);
+var sword = new Weapon("Sword", 3, 0);
 var staff = new Weapon("Staff", 5, 0);
 var dagger = new Weapon("Dagger", 2, 0);
 var wand = new Weapon("Wand", 0, 0);
@@ -33,4 +33,4 @@ module.exports = {
     greaves: greaves,
     boots: boots,
     gloves: gloves
-};
+}; 
