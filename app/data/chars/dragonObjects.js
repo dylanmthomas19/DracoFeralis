@@ -25,3 +25,4 @@ module.exports = {
     lightningDragon: lightningDragon,
     bossDragon: bossDragon
 }
+
