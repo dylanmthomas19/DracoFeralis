@@ -1,7 +1,8 @@
 //Handles how characters fight dragons
-var dragon = require("../data/chars/dragonObjects");
-var characters = require("../data/chars/characterObjects");
-var weapons = require("../data/equips/equipmentObjects");
+const dragon = require("../data/chars/dragonObjects")
+const characters = require("../data/chars/characterObjects")
+//line 5 just shows how to call stats
+//console.log(characters.fighter.str + characters.fighter.weapon[0].str)
 
 
 var damageTaken = attacker.str;
