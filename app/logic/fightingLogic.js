@@ -3,8 +3,9 @@ var dragon = require("../data/chars/dragonObjects");
 var characters = require("../data/chars/characterObjects");
 var weapons = require("../data/equips/equipmentObjects");
 
+
 var damageTaken = attacker.str;
-// click for each party member action
+
 var attack = function(){
     dodge();
 }
