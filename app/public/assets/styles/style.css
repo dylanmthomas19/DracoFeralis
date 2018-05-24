@@ -1,3 +1,7 @@
 body {
     background-image: url("../images/blackdragontitlescreen.jpg");
 }
+
+.jumbotron {
+    height: 1600px;
+}
