@@ -3,8 +3,10 @@ const characters = require("../../data/chars/characterObjects")
 
 var attack = ((characters.fighter.str + characters.fighter.weapon[0].str) * 2);
 console.log("Fighter attack: " + attack);
+
 var defense = ((dragon.fireDragon.def) * 0.5);
 console.log("Dragon defense: " + defense);
+
 var damage = attack - defense;
 
 var attack = function () {
@@ -37,4 +39,3 @@ console.log("-----------------------")
 defense();
 
 
-// if statement to check that party members hp is above 0 to allow them to attack
