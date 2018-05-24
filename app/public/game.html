@@ -54,10 +54,81 @@
     <div class="container-fluid">
         <div class="jumbotron">
             <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Fighter</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="#" class="thumbnail">
+                                            <img src="..." alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">Attack</button>
+                                    <button type="button" class="btn btn-default">Defend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Mage</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="#" class="thumbnail">
+                                            <img src="..." alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">Attack</button>
+                                    <button type="button" class="btn btn-default">Defend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="dragonPanel">The Dragon to be Vanquished</div>
+                            <div class="panel-body" style="height: 200px;">
+                                <!--Need to move styling into css file!-->
+                                Picture of the dragon, negative progress bar.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
 
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Rogue</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="#" class="thumbnail">
+                                            <img src="..." alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">Attack</button>
+                                    <button type="button" class="btn btn-default">Defend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Fighter</div>
+                        <div class="panel-heading">Healer</div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-4">
@@ -67,94 +138,27 @@
                                 </div>
                             </div>
                             <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
                                 <button type="button" class="btn btn-default">Defend</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Mage</div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img src="..." alt="...">
-                                    </a>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Heal
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Fighter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mage</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Rogue</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Healer</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
-                                <button type="button" class="btn btn-default">Defend</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">The Dragon to be Vanquished</div>
-                    <div class="panel-body" style="height: 200px;">
-                        <!--Need to move styling into css file!-->
-                        Picture of the dragon, negative progress bar.
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Rogue</div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img src="..." alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
-                                <button type="button" class="btn btn-default">Defend</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Healer</div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="#" class="thumbnail">
-                                    <img src="..." alt="...">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default">Defend</button>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Heal
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Fighter</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Mage</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Rogue</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Healer</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
