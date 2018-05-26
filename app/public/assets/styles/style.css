@@ -5,3 +5,13 @@ body {
 .jumbotron {
     height: 1600px;
 }
+
+.dragonPanel {
+    height: 500px;
+}
+
+.combatLog{
+    min-height: 500px; 
+    height: 500px; 
+    overflow-y:scroll;
+}
