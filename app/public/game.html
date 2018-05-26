@@ -18,8 +18,6 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-default">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                     aria-expanded="false">
@@ -36,122 +34,113 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Action</a>
-                        </li>
-                        <li>
-                            <a href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a href="#">Something else here</a>
-                        </li>
+                            <a href="#">Save</a>
+                        </li>           
                         <li role="separator" class="divider"></li>
                         <li>
-                            <a href="#">Separated link</a>
+                            <a href="#">Logout</a>
                         </li>
                     </ul>
 
-        </div>
+    </div>
     <div class="container-fluid">
         <div class="jumbotron">
-<div class="row">
-<div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Fighter</div>
-                <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Fighter</div>
+                        <div class="panel-body">
+                            <a href="#" class="thumbnail">
+                                <img src="assets/images/SwordnBoard.jpg" alt="...">
+                            </a>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">Attack</button>
+                                <button type="button" class="btn btn-default">Defend</button>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="#" class="thumbnail">
-                        <img src="..." alt="...">
-                    </a>
 
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Attack</button>
-                        <button type="button" class="btn btn-default">Defend</button>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Mage</div>
+                        <div class="panel-body">
+
+                            <a href="#" class="thumbnail">
+                                <img src="assets/images/mage.png" alt="...">
+                            </a>
+
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">Attack</button>
+                                <button type="button" class="btn btn-default">Defend</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Rogue</div>
+                        <div class="panel-body">
+
+                            <a href="#" class="thumbnail">
+                                <img src="assets/images/rogue.jpg" alt="...">
+                            </a>
+
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">Attack</button>
+                                <button type="button" class="btn btn-default">Defend</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Healer</div>
+                        <div class="panel-body">
+
+                            <a href="#" class="thumbnail">
+                                <img src="assets/images/healer.jpg" alt="...">
+                            </a>
+                        </div>
+
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">Defend</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Heal
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Fighter</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mage</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rogue</a>
+                                </li>
+                                <li>
+                                    <a href="#">Healer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="dragonPanel">The Dragon to be Vanquished</div>
+                        <div class="panel-body" style="height: 200px;">
+                            <!--Need to move styling into css file!-->
+                            Picture of the dragon, negative progress bar.
+                        </div>
                     </div>
                 </div>
             </div>
-        
 
-            <div class="panel panel-default">
-                <div class="panel-heading">Mage</div>
-                <div class="panel-body">
-
-                    <a href="#" class="thumbnail">
-                        <img src="..." alt="...">
-                    </a>
-
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Attack</button>
-                        <button type="button" class="btn btn-default">Defend</button>
-                    </div>
-                </div>
-            </div>
-</div>            
-<div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Rogue</div>
-                <div class="panel-body">
-
-                    <a href="#" class="thumbnail">
-                        <img src="..." alt="...">
-                    </a>
-
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Attack</button>
-                        <button type="button" class="btn btn-default">Defend</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="panel panel-default">
-                <div class="panel-heading">Healer</div>
-                <div class="panel-body">
-
-                    <a href="#" class="thumbnail">
-                        <img src="..." alt="...">
-                    </a>
-                </div>
-            
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default">Defend</button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Heal
-                    <span class="caret"></span>
-                    </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Fighter</a>
-                            </li>
-                            <li>
-                                <a href="#">Mage</a>
-                            </li>
-                            <li>
-                                <a href="#">Rogue</a>
-                            </li>
-                            <li>
-                                <a href="#">Healer</a>
-                            </li>
-                        </ul>
-                </div>
-            </div>
-</div>
-<div class="col-lg-4">           
-            <div class="panel panel-default">
-                <div class="panel-heading" id="dragonPanel">The Dragon to be Vanquished</div>
-                <div class="panel-body" style="height: 200px;">
-                    <!--Need to move styling into css file!-->
-                    Picture of the dragon, negative progress bar.
-                </div>
-            </div>
         </div>
     </div>
-        
-</div> 
-</div>
-</div>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
-                <!-- <div class="col-md-4"> -->
             <div class="col-md-offset-4 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">Actions to be done by party members</div>
@@ -162,25 +151,24 @@
             </div>
         </div>
     </div>
-        
+
     <br>
     <div class="container-fluid">
         <div class="row">
-                <!-- <div class="col-md-4"> -->
             <div class="col-lg-offset-4 col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">Combat Log</div>
                     <div class="panel-body" style="min-height: 500px; height: 500px; overflow-y:scroll">
-                            <!--Need to move styling into css file-->
+                        <!--Need to move styling into css file-->
                         Stuff that happens! (damage dealt, taken, recovered, etc);;lsjdfl;aej gnl;agapfgao;fo;aesjgsl;dfhjsepr;f okqfmapdbmsphksoa[gjsoagnaipsfjiOFAIOF
-                            BASDIGUBA9SOGBUAISFUHUIOAGIHADG HAOS;DGHol;kvjoasdfjl;ckjoWKMO; PADFVNAO;SFJAWO;FIHASOFNSDO ;GHSDFOGJIASDOGHK]
+                        BASDIGUBA9SOGBUAISFUHUIOAGIHADG HAOS;DGHol;kvjoasdfjl;ckjoWKMO; PADFVNAO;SFJAWO;FIHASOFNSDO ;GHSDFOGJIASDOGHK]
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     <!-- This screen will be the main game screen for combat -->
     <!-- Left side of the screen will contain party members right will contain dragon (alternate every other?) -->
