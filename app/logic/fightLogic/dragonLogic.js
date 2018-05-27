@@ -1,7 +1,7 @@
-const dragon = require("../../data/chars/dragonObjects");
-const characters = require("../../data/chars/characterObjects");
+const db = require("../../models");
 
-var strength = dragon.fireDragon.dmg
+
+var strength = db.dragons
 var enemies = [characters.fighter, characters.healer, characters.mage, characters.rogue]
 var target = enemies[Math.floor(Math.random() * enemies.length)];
 var targetDef = target.def + target.armor[0].def + target.armor[1].def + target.armor[2].def + target.armor[3].def + target.armor[4].def + target.weapon[0].def;
@@ -48,3 +48,9 @@ var reset = function() {
 }
 
 attack();
+
+module.exports = {
+    attack: attack,
+    dodge: dodge,
+    reset: reset
+}
