@@ -108,8 +108,10 @@
 
 
                             <div class="btn-group" role="group" aria-label="...">
+
                                 <button type="button" class="btn btn-default" id="healerDefend">Defend</button>
                                 <button type="button" class="btn btn-default dropdown-toggle" id="healerHeal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
                                     Heal
                                     <span class="caret"></span>
                                 </button>
@@ -140,28 +142,31 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Fire Dragon</a>
+                                    <a href="#" id="fire">Fire Dragon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Water Dragon</a>
+                                    <a href="#" id="water">Water Dragon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Earth Dragon</a>
+                                    <a href="#" id="earth">Earth Dragon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Wind Dragon</a>
+                                    <a href="#" id="wind">Wind Dragon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Lightning Dragon</a>
+                                    <a href="#" id="lightning">Lightning Dragon</a>
                                 </li>
                                 <li>
-                                    <a href="#">Boss Dragon</a>
+                                    <a href="#" id="boss">Boss Dragon</a>
+
                                 </li>
                             </ul>
                         </div>
                         <div class="panel-body">
                             Picture of the dragon, negative progress bar.
                         </div>
+                        
+                        <img id="dragonID" src="">
                     </div>
                 </div>
             </div>
@@ -169,6 +174,33 @@
         </div>
     </div>
     </div>
+
+    <script>
+        $("#fire").on("click", (event)=>{
+            $("#dragonID").attr("src","./assets/images/fire.gif")
+                .data("type","fireDragon")
+        })
+        $("#water").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/water.gif")
+                .data("type","waterDragon")
+        })
+        $("#earth").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/earth.gif")
+                .data("type","earthDragon")
+        })
+        $("#wind").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/wind.gif")
+                .data("type","windDragon")
+        })
+        $("#lightning").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/lightning.gif")
+                .data("type","lightningDragon")
+        })
+        $("#boss").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/boss.gif")
+                .data("type","bossDragon")
+        })
+    </script>
 
     <div class="container-fluid">
         <div class="row">

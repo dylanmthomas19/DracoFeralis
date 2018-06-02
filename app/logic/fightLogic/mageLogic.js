@@ -1,7 +1,7 @@
 const dragon = require("../../data/chars/dragonObjects")
 const characters = require("../../data/chars/characterObjects")
 
-var attack = ((characters.mage.str + characters.mage.weapon[0].str) * 2);
+var attack = ((characters.mage.mag + characters.mage.weapon[0].str) * 2);
 console.log("Mage attack: " + attack);
 var defense = ((dragon.fireDragon.def) * 0.5);
 console.log("Dragon defense: " + defense);
