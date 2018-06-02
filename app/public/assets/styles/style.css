@@ -85,3 +85,12 @@ nav {
     align-content: center;
     text-align: center;
 }
+#dragonID {
+    background-color: black; 
+    background-size: cover; 
+}
+.panel.panel-default {
+    background-color: black; 
+    text-align: center;
+    align-content: center;
+}
