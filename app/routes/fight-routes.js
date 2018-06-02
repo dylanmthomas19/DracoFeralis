@@ -9,4 +9,11 @@ app.get("/api/dragons", function(req, res) {
       res.json(dbDragons);
     });
   });
+  app.get("/api/characters", function(req, res) {
+    // Write code here to retrieve all of the todos from the database and res.json them
+    // back to the user
+    db.Characters.findAll({}).then(function (dbCharacters) {
+      res.json(dbCharacters);
+    });
+  });
 };
