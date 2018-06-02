@@ -1,6 +1,7 @@
 body {
     height: 100%;
     background-image: url("../images/blackdragontitlescreen.jpg");
+    background-size: cover;
 
 }
 
@@ -73,4 +74,9 @@ nav {
 
 .thumbnail {
     background-color: black;
+}
+
+.panelBody{
+    text-align: center;
+    align-content: center;
 }
