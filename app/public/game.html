@@ -41,7 +41,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#">Save</a>
-                        </li>           
+                        </li>
                         <li role="separator" class="divider"></li>
                         <li>
                             <a href="#">Logout</a>
@@ -60,8 +60,8 @@
                                 <img src="assets/images/fighter2.gif" alt="...">
                             </a>
                             <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
-                                <button type="button" class="btn btn-default">Defend</button>
+                                <button type="button" class="btn btn-default" id="fighterAttack">Attack</button>
+                                <button type="button" class="btn btn-default" id="fighterDefend">Defend</button>
                             </div>
                         </div>
                     </div>
@@ -76,8 +76,8 @@
                             </a>
 
                             <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
-                                <button type="button" class="btn btn-default">Defend</button>
+                                <button type="button" class="btn btn-default" id="mageAttack">Attack</button>
+                                <button type="button" class="btn btn-default" id="mageDefend">Defend</button>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,8 @@
                             </a>
 
                             <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">Attack</button>
-                                <button type="button" class="btn btn-default">Defend</button>
+                                <button type="button" class="btn btn-default" id="rogueAttack">Attack</button>
+                                <button type="button" class="btn btn-default" id="rogueDefend">Defend</button>
                             </div>
                         </div>
                     </div>
@@ -105,37 +105,68 @@
                             <a href="#" class="thumbnail">
                                 <img src="assets/images/healer2.gif" alt="...">
                             </a>
-                        </div>
 
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default">Defend</button>
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Heal
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Fighter</a>
-                                </li>
-                                <li>
-                                    <a href="#">Mage</a>
-                                </li>
-                                <li>
-                                    <a href="#">Rogue</a>
-                                </li>
-                                <li>
-                                    <a href="#">Healer</a>
-                                </li>
-                            </ul>
+
+                            <div class="btn-group" role="group" aria-label="...">
+
+                                <button type="button" class="btn btn-default" id="healerDefend">Defend</button>
+                                <button type="button" class="btn btn-default dropdown-toggle" id="healerHeal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    Heal
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Fighter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Mage</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Rogue</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Healer</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading" id="dragonPanel">The Dragon to be Vanquished</div>
+                        <div class="panel-heading" id="dragonPanel">The Dragon to be Vanquished
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dragon
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" id="fire">Fire Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="water">Water Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="earth">Earth Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="wind">Wind Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="lightning">Lightning Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="boss">Boss Dragon</a>
+
+                                </li>
+                            </ul>
+                        </div>
                         <div class="panel-body">
                             Picture of the dragon, negative progress bar.
                         </div>
+                        
+                        <img id="dragonID" src="">
                     </div>
                 </div>
             </div>
@@ -143,6 +174,33 @@
         </div>
     </div>
     </div>
+
+    <script>
+        $("#fire").on("click", (event)=>{
+            $("#dragonID").attr("src","./assets/images/fire.gif")
+                .data("type","fireDragon")
+        })
+        $("#water").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/water.gif")
+                .data("type","waterDragon")
+        })
+        $("#earth").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/earth.gif")
+                .data("type","earthDragon")
+        })
+        $("#wind").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/wind.gif")
+                .data("type","windDragon")
+        })
+        $("#lightning").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/lightning.gif")
+                .data("type","lightningDragon")
+        })
+        $("#boss").on("click", ()=>{
+            $("#dragonID").attr("src","./assets/images/boss.gif")
+                .data("type","bossDragon")
+        })
+    </script>
 
     <div class="container-fluid">
         <div class="row">
@@ -164,8 +222,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" id="combatLog">Combat Log</div>
                     <div class="panel-body">
-                        Stuff that happens! (damage dealt, taken, recovered, etc);;lsjdfl;aej gnl;agapfgao;fo;aesjgsl;dfhjsepr;f okqfmapdbmsphksoa[gjsoagnaipsfjiOFAIOF
-                        BASDIGUBA9SOGBUAISFUHUIOAGIHADG HAOS;DGHol;kvjoasdfjl;ckjoWKMO; PADFVNAO;SFJAWO;FIHASOFNSDO ;GHSDFOGJIASDOGHK]
+                        Stuff that happens! (damage dealt, taken, recovered, etc)
 
                     </div>
                 </div>

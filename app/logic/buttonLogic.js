@@ -1,5 +1,11 @@
 // Logic to tie in everything under fightLogic folder to interact with the html
+var attackDefend = require("../data/chars/characterObjects.js");
+var heal = require("../data/chars/characterObjects.js");
+var dragonAction = require("../data/chars/dragonObjects");
 
+$(document).ready(function(){
+    
+})
 // button press for each character (fighter, mage, rogue, healer)
     // if attack, update the queue panel
     // if defend, update the queue panel

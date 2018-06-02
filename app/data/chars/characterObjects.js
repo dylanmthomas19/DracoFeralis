@@ -1,5 +1,3 @@
-const equipment = require('../equips/equipmentObjects.js')
-
 //Objects of different Characters to choose from
 var Class = function(name, str, def, agi, mag, hp){
     this.name = name,
@@ -8,18 +6,12 @@ var Class = function(name, str, def, agi, mag, hp){
     this.agi = agi,
     this.mag = mag,
     this.hp = hp,
-    this.weapon = [],
-    this.armor = [equipment.helmet, equipment.chestPlate, equipment.greaves, equipment.boots, equipment.gloves],
     this.defend = false
 }
-var fighter = new Class("Fighter", 5, 5, 2, 0, 20)
-fighter.weapon.push(equipment.sword, equipment.shield)
-var mage = new Class("Mage", 2, 2, 2, 10, 15)
-mage.weapon.push(equipment.staff)
-var rogue = new Class("Rogue", 2, 3, 10, 0, 15)
-rogue.weapon.push(equipment.dagger)
-var healer = new Class("Healer", 0, 2, 2, 10, 20)
-healer.weapon.push(equipment.wand, equipment.shield)
+var fighter = new Class("Fighter", 10, 15, 5, 0, 30)
+var mage = new Class("Mage", 5, 10, 5, 20, 25)
+var rogue = new Class("Rogue", 5, 10, 15, 0, 15)
+var healer = new Class("Healer", 0, 10, 5, 10, 25)
 
 module.exports = {
     fighter: fighter,
