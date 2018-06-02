@@ -20,8 +20,8 @@ var defense = function () {
     console.log("Fighter Defense: " + defense);
 }
 
-var dodge = function () {
-    var dodgeChance = (dragon.fireDragon.agi / 20);
+var dodge = function (target) {
+    var dodgeChance = (target.agi / 20);
     console.log("dodge chance: " + dodgeChance)
     var hit = Math.random();
     console.log("Hit: " + hit)
@@ -29,9 +29,9 @@ var dodge = function () {
         damage = 0;
     }
     else {
-        dragon.fireDragon.hp = dragon.fireDragon.hp - damage
+        target.hp = target.hp - damage
     }
-    console.log("Dragon hp: " + dragon.fireDragon.hp)
+    console.log("Dragon hp: " + target.hp)
 };
 
 attack();
